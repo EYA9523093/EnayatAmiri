@@ -1,27 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to EnayatAmiri</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enayat Amiri</title>
   <style>
+    /* Simple reset and basic styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f4f4f4;
-    }
-    h1 {
+      line-height: 1.6;
       color: #333;
+      background-color: #fdfdfd;
     }
-    a {
-      color: #0366d6;
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #eee;
+    }
+    header img {
+      width: 180px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin: 0 10px;
       text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      max-width: 800px;
+      margin: 0 auto 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    ul, p {
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      position: relative;
+    }
+    .contact-info {
+      margin: 0.5rem 0;
+    }
+    .research-interests {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    .publication-list {
+      list-style-type: square;
+      padding-left: 1.5rem;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to EnayatAmiri GitHub Page</h1>
-  <p>This website is generated from the repository at <a href="https://github.com/EYA9523093/EnayatAmiri.git">EnayatAmiri</a>.</p>
+  <!-- Header Section -->
+  <header>
+    <!-- Replace "profile.jpg" with the name/path of your actual photo -->
+    <img src="profile.jpg" alt="Enayat Amiri Photo">
+    <h1>Enayat Amiri</h1>
+    <p>Prospective Ph.D. Student</p>
+    <div class="contact-info">
+      <p>Tehran, Iran | Phone: +98 916 284 1590 | Email: <a href="mailto:Enayat.amiri1377@gmail.com">Enayat.amiri1377@gmail.com</a></p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#publications">Publications</a>
+    <a href="#skills">Skills</a>
+    <a href="#awards">Honors & Awards</a>
+  </nav>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <h3>Sharif University of Technology, Tehran, Iran</h3>
+    <p><strong>M.Sc. in Electrical Engineering (Sep. 2021 - Jan. 2024)</strong></p>
+    <ul>
+      <li>Thesis: “Scheduling Traffic Lights by Secure Computation”, supervised by Dr. Mohammad Haeri.</li>
+      <li>Coursework: Advanced Engineering Mathematics, System Identification, Multivariable Control, Model Predictive Control, Adaptive Control, Nonlinear Control.</li>
+    </ul>
+
+    <h3>Isfahan University of Technology, Isfahan, Iran</h3>
+    <p><strong>B.Sc. in Electrical Engineering (Sep. 2016 - Aug. 2020)</strong></p>
+    <ul>
+      <li>Thesis: “Detection and Diagnosis of Gastric Cancer from Endoscopic Images”, supervised by Dr. Farzaneh Shayegh.</li>
+      <li>Coursework: Digital Control, Modern Control Systems, Special Topics in Control, Instrumentation, Telecommunication Circuits, Microprocessor, FPGA.</li>
+    </ul>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research">
+    <h2 class="section-title">Research Interests</h2>
+    <ul class="research-interests">
+      <li>Cyber-Physical Systems</li>
+      <li>Control of Traffic Signals</li>
+      <li>Multi-Agent Systems</li>
+      <li>Intelligent Transportation Systems</li>
+      <li>Connected and Automated Vehicles</li>
+      <li>Nonlinear and Adaptive Control</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2 class="section-title">Research & Teaching Experience</h2>
+    <h3>Research Projects</h3>
+    <ul>
+      <li><strong>System Identification (M.Sc. Course Project)</strong> – Nonparametric identification (ETFE, SPA) and parametric methods (LS, IV, RLS, etc.).</li>
+      <li><strong>Model Predictive Control (M.Sc. Course Project)</strong> – Designed PFC and EPFC controllers for a bilinear motor system.</li>
+      <li><strong>Adaptive Control (M.Sc. Course Project)</strong> – Adaptive Feedforward Neural Network Control with optimized hidden node distribution.</li>
+      <li><strong>Nonlinear Control (M.Sc. Course Project)</strong> – Model-free control for nonlinear underactuated systems with uncertainties and disturbances.</li>
+      <li><strong>Robust Control (B.Sc. Course Project)</strong> – H-infinity control for Continuous Stirred Tank Reactor (CSTR) using μ analysis.</li>
+      <li><strong>FPGA Course (B.Sc. Course Project)</strong> – Implementation of tunable function generator waves and D-to-A converter using FPGA.</li>
+      <li><strong>Digital Signal Processing (B.Sc. Course Project)</strong> – Effects of quantization error on filter coefficients in direct/cascade-based filters.</li>
+    </ul>
+
+    <h3>Teaching Experience</h3>
+    <ul>
+      <li><strong>Teaching Assistant</strong> – Digital Control Systems, Linear Control Systems (Fall 2021, Spring 2021, Fall 2022)</li>
+      <li><strong>Lab Instructor / Research Assistant</strong> – Control Lab, Digital Control Lab (2023 - 2024)</li>
+      <li><strong>Tutor</strong> – Circuit Theory, MATLAB (2017 - 2019), Mathematics for high school students (2023 - 2024)</li>
+    </ul>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications">
+    <h2 class="section-title">Publications</h2>
+    <ul class="publication-list">
+      <li>E. Amiri, M. Haeri, and S. Adelipour, <em>Secret sharing implementation of predictive functional control</em>, 
+        31th Iranian Conference of Electrical Engineering (ICEE), Amirkabir University of Technology, Tehran, Iran, 
+        pp. 437-441, May 2023. (Accepted)</li>
+      <li>S. Adelipour, E. Amiri, and M. Haeri, <em>Vulnerability Mitigation of Urban Traffic Control against Cyberattacks Using Secure Multi-Party Computation</em>, 
+        IEEE Transactions on Intelligent Transportation Systems, 2024. (Accepted)</li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul>
+      <li><strong>Research Skills:</strong> Control of Traffic Signals, Cyber-Physical Systems, Control Theory, Model Predictive Control, Adaptive and Nonlinear Control.</li>
+      <li><strong>Programming Languages:</strong> MATLAB, Python, C++, AVR Microcontrollers.</li>
+      <li><strong>Simulation Tools:</strong> Simulink, PSpice, CARLA Simulator.</li>
+      <li><strong>Libraries/Packages:</strong> NumPy, Pandas, Matplotlib.</li>
+    </ul>
+  </section>
+
+  <!-- Honors and Awards Section -->
+  <section id="awards">
+    <h2 class="section-title">Honors & Awards</h2>
+    <ul>
+      <li>Ranked 58th among more than 15,000 participants in the Nationwide University Entrance Exam for M.Sc. in Electrical Engineering (2021).</li>
+      <li>Ranked among the top 1% of the Nationwide University Entrance Exam out of ~160,000 applicants (2016).</li>
+      <li>Graduated from High School with Honors as the Top Student (2016) with GPA: 4.00/4.00.</li>
+    </ul>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 - Enayat Amiri</p>
+    <p>
+      <a href="https://www.linkedin.com/in/enayat-amiri-536928225/" target="_blank">LinkedIn</a> | 
+      <a href="CV.pdf" target="_blank">My CV (PDF)</a>
+    </p>
+  </footer>
 </body>
 </html>
