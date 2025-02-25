@@ -1,3 +1,7 @@
+/* ================= */
+/* Overall Page Setup */
+/* ================= */
+
 body {
   margin: 0 auto;
   max-width: 1000px;
@@ -10,9 +14,32 @@ body {
   color: #454545;
 }
 
+/* ================== */
+/* Profile Photo Style */
+/* ================== */
 #profile-photo {
+  /* Fixed width/height for circle shape */
   width: 280px;
+  height: 280px;
+
+  /* Make it circular and ensure the image fills that circle */
+  border-radius: 50%;
+  object-fit: cover;
+
+  /* Slight tilt */
+  transform: rotate(5deg);
+
+  /* Centers the image and adds spacing at the bottom */
+  display: block;
+  margin: 0 auto 20px auto;
+
+  /* Optional drop shadow for nicer presentation */
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+/* ================= */
+/* Columns & Text */
+/* ================= */
 
 .column {
   padding: 0 12px;
@@ -45,24 +72,36 @@ a:hover {
   flex-direction: row;
 }
 
-/* Responsive adjustments */
+/* ================= */
+/* Responsive Design */
+/* ================= */
 @media (max-width: 900px) {
   body {
     max-width: 650px;
   }
+
   .flex-container {
     flex-direction: column;
   }
+
   #profile-photo {
+    /* For smaller screens, let the image scale down: */
     width: calc(100vw - 20px);
     max-width: 400px;
+    height: auto; /* Maintaining aspect ratio can break the perfect circle, but ensures no distortion */
+    border-radius: 50%;
+    object-fit: cover;
+    transform: rotate(5deg);
   }
+
   .column {
     padding: 0;
   }
 }
 
-/* Dark mode preference */
+/* ====================== */
+/* Dark Mode Preferences */
+/* ====================== */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #111;
