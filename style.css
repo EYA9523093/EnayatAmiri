@@ -85,13 +85,14 @@ a:hover {
   }
 
   #profile-photo {
-    /* For smaller screens, let the image scale down: */
-    width: calc(100vw - 20px);
-    max-width: 400px;
-    height: auto; /* Maintaining aspect ratio can break the perfect circle, but ensures no distortion */
-    border-radius: 50%;
-    object-fit: cover;
-    transform: rotate(5deg);
+  /* Make the image a circle */
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* Optional: center the image and add a small margin at the bottom */
+  display: block;
+  margin: 0 auto 20px;
   }
 
   .column {
