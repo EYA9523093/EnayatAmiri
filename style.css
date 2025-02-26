@@ -1,7 +1,3 @@
-/* ================= */
-/* Overall Page Setup */
-/* ================= */
-
 body {
   margin: 0 auto;
   max-width: 1000px;
@@ -14,32 +10,17 @@ body {
   color: #454545;
 }
 
-/* ================== */
-/* Profile Photo Style */
-/* ================== */
-#profile-photo {
-  /* Fixed width/height for circle shape */
-  width: 280px;
-  height: 280px;
-
-  /* Make it circular and ensure the image fills that circle */
-  border-radius: 50%;
-  object-fit: cover;
-
-  /* Slight tilt */
-  transform: rotate(5deg);
-
-  /* Centers the image and adds spacing at the bottom */
-  display: block;
-  margin: 0 auto 20px auto;
-
-  /* Optional drop shadow for nicer presentation */
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+/* Logo next to text */
+.uni-logo {
+  width: 40px;       /* Adjust size as desired */
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
-/* ================= */
-/* Columns & Text */
-/* ================= */
+#profile-photo {
+  width: 280px;
+}
 
 .column {
   padding: 0 12px;
@@ -72,37 +53,24 @@ a:hover {
   flex-direction: row;
 }
 
-/* ================= */
-/* Responsive Design */
-/* ================= */
+/* Responsive adjustments */
 @media (max-width: 900px) {
   body {
     max-width: 650px;
   }
-
   .flex-container {
     flex-direction: column;
   }
-
   #profile-photo {
-  /* Make the image a circle */
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  object-fit: cover;
-  /* Optional: center the image and add a small margin at the bottom */
-  display: block;
-  margin: 0 auto 20px;
+    width: calc(100vw - 20px);
+    max-width: 400px;
   }
-
   .column {
     padding: 0;
   }
 }
 
-/* ====================== */
-/* Dark Mode Preferences */
-/* ====================== */
+/* Dark mode preference */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #111;
